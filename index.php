@@ -13,6 +13,8 @@
   <?php echo "<h1>Hello World! (CSS has changed this text to blue!)</h1>" ?>  
   <img src="img/thedude.jpg" alt="The dude">
   <?php include("example.php"); ?>
+  Welcome <?php echo $_GET["name"]; ?><br>
+  Your email address is: <?php echo $_GET["email"]; ?><br>
   <button type="button" onclick="helloJS()">Click Me!</button>
   
 </body>
