@@ -6,6 +6,8 @@
   <title>Hello World</title>
 </head>
 
+<?php echo file_get_contents("html/nav.html"); ?> 
+
 
 <body>  
   <?php echo "<h1>Hello World! (CSS has changed this text to blue!)</h1>" ?>  
