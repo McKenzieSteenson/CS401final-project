@@ -6,11 +6,15 @@ email: mckenziesteenson@u.boisestate.edu
 ## How to run this website
 
 run 
+
 ```
-git clone https://github.com/McKenzieSteenson/CS401final-project.git```
+git clone https://github.com/McKenzieSteenson/CS401final-project.git
+```
 
 run 
-```./setup.sh```
+```
+./setup.sh
+```
 from project repository
 
 run 
