@@ -6,8 +6,13 @@
   <title>Create Your Blog</title>
 </head>
 
-<?php echo file_get_contents("html/nav.html"); ?> 
+<div class="topnav">
+    <a href="../index.php">Home</a></li>
+    <a class="active" href="../create.php" >Create</a>
+    <a href="../edit.php">Edit</a>
+</div>
 
+<?php echo "<h3>Type your blog below, and when you are ready, type your blog title in the first input box below and hit 'Send!'</h3>" ?>  
 
 <?php
     if( $_POST["name"] || $_POST["data"] ) {
@@ -16,7 +21,7 @@
 
         $folder="files/";
         $ext=".txt";
-        $file_name=$folder."".$file_name."".$ext;
+        $file_name=$folder."".$file_name;//."".$ext;
         if(file_exists($file_name)){
             // Do something if file already exists
 
@@ -28,27 +33,17 @@
     }
 
 
-if(isset($_POST['delete_file']))
-{
- $file_name=$_POST['file_name'];
- $folder="files/";
- $ext=".txt";
- $file_name=$folder."".$file_name."".$ext;
- unlink($file_name);
-}
 ?>
 
 <html>
     <body>
-        <form action = "?" method = "POST" id="raw-text" >
-            <textarea name="data" rows="10" id="raw" style="word-wrap: break-word; resize: horizontal; height: 700px; width: 99%"></textarea>
-            <input name="name" placeholder="File Name here"></input> 
-            <button name="submit">Send!</button>
-        </form>
-        <form method="post" action="create.php" id="delete_form">
-            <input placeholder="File Name here" type="text" name="file_name">
-            <input type="submit" value="Delete File" name="delete_file">
-        </form>
+        <form action = " ? " method = "POST" id="raw-text" >
+            <textarea name="data" class='blogInput' placeholder="Write your blog post here!"></textarea>
+            <input name="name" placeholder="Blog Title here"></input> 
+            <button class="myButton" name="submit">Send!</button>
+            <button type="button" class="myButton" onClick="document.location.href='index.php'">View Blogs</button>
+
+        </form>        
     </body>
 </html>
 </html>
