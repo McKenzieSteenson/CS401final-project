@@ -39,7 +39,7 @@
     <body>
         <form action = " ? " method = "POST" id="raw-text" >
             <textarea name="data" class='blogInput' placeholder="Write your blog post here!"></textarea>
-            <input name="name" placeholder="Blog Title here"></input> 
+            <input name="name" class="fileInput" placeholder="Blog Title here"></input> 
             <button class="myButton" name="submit">Send!</button>
             <button type="button" class="myButton" onClick="document.location.href='index.php'">View Blogs</button>
 

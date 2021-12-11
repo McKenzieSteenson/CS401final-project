@@ -74,7 +74,7 @@ if(isset($_POST['delete_file']))
 <html>
     <body>
     <form method="post" action="edit.php" id="display_form">
-        <input name="name" placeholder="Blog Title here"></input> 
+        <input name="name" class="fileInput" placeholder="Blog Title here"></input> 
         <button name="click" class="myButton" >Edit Blog</button>
         <button name="save" class="myButton">Save Blog</button>
         <button type="button" class="myButton" onClick="document.location.href='index.php'">View Blogs</button>
@@ -91,7 +91,7 @@ if(isset($_POST['delete_file']))
         
     </form>
     <form method="post" action="edit.php" id="delete_form">
-            <input placeholder="Blog Title here" type="text" name="file_name">
+            <input class="fileInputplace" placeholder="Blog Title here" type="text" name="file_name">
             <input class="myButton"type="submit" value="Delete File" name="delete_file">
         </form>
     </body>

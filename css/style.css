@@ -109,6 +109,13 @@ h3 {
   font-size: 16px;
 }
 
+.fileInput {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
 .myButton {
 	box-shadow:inset 0px 1px 0px 0px #a6827e;
 	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
