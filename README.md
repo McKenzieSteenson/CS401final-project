@@ -9,6 +9,8 @@ run
 ```
 git clone https://github.com/McKenzieSteenson/CS401final-project.git
 ```
+or unzip the CS401 zip file in the desired project directory
+
 run 
 ```
 ./setup.sh
