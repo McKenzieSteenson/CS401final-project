@@ -5,12 +5,17 @@ email: mckenziesteenson@u.boisestate.edu
 
 ## How to run this website
 
-run ```console
+run 
+```
 git clone https://github.com/McKenzieSteenson/CS401final-project.git```
 
-run '''./setup.sh''' from project repository
+run 
+```./setup.sh```
+from project repository
 
-run '''php -S localhost:3000''' from project repository
+run 
+```php -S localhost:3000```
+from project repository
 
 open localhost:3000 in your web browser
 
